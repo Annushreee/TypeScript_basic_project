@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <p class="subtitle">Organize your tasks and stay productive.</p>
+
+        <form id="task-form">
+            <input
+                type="text"
+                id="task-name"
+                placeholder="Enter a new task"
+                required
+            >
+
+            <input
+                type="date"
+                id="due-date"
+                required
+            >
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <ul id="task-list"></ul>
+
+        <p id="empty-message">No tasks yet. Add your first task!</p>
+    </div>
+
+    <script src="dist/app.js"></script>
+</body>
+</html>
